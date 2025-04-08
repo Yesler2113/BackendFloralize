@@ -85,6 +85,7 @@ namespace FBackend.Services
 
                 var personalizado = new Personalizado
                 {
+                    FechaPedido = model.FechaPedido,
                     TipoFlor = model.TipoFlor,
                     Cantidad = model.Cantidad,
                     IncluirPresente = model.IncluirPresente,
