@@ -4,6 +4,7 @@ namespace FBackend.Models.ValidationsDto
 {
     public class PersonalizadoCreateDto
     {
+        public DateTime FechaPedido { get; set; }
         [Required]
         [StringLength(50, ErrorMessage = "El tipo de flor no debe exceder los 50 caracteres.")]
         public string TipoFlor { get; set; }
