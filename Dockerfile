@@ -13,7 +13,7 @@ WORKDIR /app
 COPY --from=build /app/out .
 
 # Exponer el puerto en el que la aplicación escucha
-EXPOSE 4040
+EXPOSE 8080
 
 # Comando para ejecutar la aplicación
 ENTRYPOINT ["dotnet", "FBackend.dll"]
